@@ -15,6 +15,7 @@ export const typeDefs = gql`
       priority: Int
       isDone: Boolean
     ): Task
+    deleteTask(taskId: ID, taskName: String): Task
   }
   type Task {
     _id: ID!
